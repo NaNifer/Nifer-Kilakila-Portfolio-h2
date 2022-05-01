@@ -1,0 +1,12 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* brand color palette */
+  :root {
+    --primary: #17ae9c;
+    --secondary: #1dbf78;
+    --tertiary: #b0ea80;
+    --dark: #ffe938;
+    --light: #fff0ac;
+  }
