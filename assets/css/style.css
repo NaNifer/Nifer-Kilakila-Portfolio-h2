@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--primary);
+    background-color: var(--light);
+    line-height: 1.5;
+  }
+
+header {
+    padding: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: teal;
+  }
+
+  ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+  }
+
+  nav ul {
+    position: fixed;
+    flex-wrap: wrap;
+    background-color: olivedrab;
+    width: 100%;
+  }
+
+  nav ul li {
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: olivedrab;
+    color: rgb(14, 14, 233);
+    margin-right: 10px;
+    font-size: 2.5vw;
+  }
+
+  header h1 {
+    padding-top: 150px;
+    margin: 0;
+    font-size: 8vw;
+    line-height: 1;
+    font-family:'Courier New', Courier, monospace;
+  }
+
+  footer {
+    margin: 1.5rem;
+    text-align: center;
+  }
+
+.social-connect li {
+  padding: 20px;
+  color: fuchsia;
+}
+
+/* Main Content */
+
+.main-layout {
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.page-section {
+  margin: 40px;
+  padding: 10px 25px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 3px dashed olivedrab;
+  border-radius: 20px;
+}
+
+.page-section h3 {
+  padding: 5px 5px;
+  font-size: 1.5em;
+}
+
+/* Work Section */
+
+#work div {
+  justify-content: space-between;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* lifted code -- need to change*/
+.flex-item {
+  border: 5px solid rebeccapurple;
+  background-color: pink;
+  color: rebeccapurple;
+  min-height: 150px;
+  max-height: 150px;
+  flex-basis: calc(50% - 1em);
+  display: flex;
+  align-items: flex-end;
+  padding: 0 0 20px 0;
+  margin: 0.5em;
+  text-decoration: none;
+  background-blend-mode: soft-light;
+  background-size: 150%;
+  transition: all 0.5s;
+  font-size: 0.9rem;
+}
+
+/* Contact Section */
+
+#contact-me address {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+/* .contact-me address a {
+  color: var(--tertiary);
+  padding: 5px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-style: normal;
+  background-image: linear-gradient(270deg, var(--primary) 0%, var(--primary) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: bottom;
+  transition: all 0.25s ease-in;
+  margin: 0 0.2rem 0.1rem;
+  display: inline-block;
+}
+
+.contact-me address a:hover {
+  background-size: 100% 88%;
+  color: var(--secondary);
+}
