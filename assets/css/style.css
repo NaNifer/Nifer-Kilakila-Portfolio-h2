@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -19,7 +23,9 @@ header {
   }
 
   nav {
-    width: 100%;;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
   }
 
   ul {
@@ -38,11 +44,13 @@ header {
     flex-wrap: wrap;
     background-color:#7F94EB;
     width: 100%;
-    float: :left;
+    justify-content: space-around;
+    
   }
 
   nav ul li {
     display: flex;
+    justify-content: center;
     text-decoration: none;
     padding: 0 20px;
     background-color: #7F94EB;
@@ -115,16 +123,20 @@ header {
 .flex-container {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
   /* justify-content: center; */
 }
 
 /* lifted code -- need to change*/
 .flex-item {
+  width: 45%;
+  flex-wrap: wrap;
   border: 5px solid #4D7587;
   background-color: #B0BFFF;
   color: #4D7587;
   padding: 0 0 20px 0;
-  margin: 0.5em;
+
+  /* margin: 0.5em; */
   text-decoration: none;
   font-size: 0.9rem;
 }
