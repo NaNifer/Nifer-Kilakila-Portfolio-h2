@@ -15,6 +15,11 @@ header {
     flex-wrap: wrap;
     align-items: center;
     background-color: #AD66BD;
+    width: 100%;
+  }
+
+  nav {
+    width: 100%;;
   }
 
   ul {
@@ -23,27 +28,32 @@ header {
     margin: 0;
     padding: 0;
     flex-direction: row;
+    list-style-type: none;
+    overflow: hidden;
   }
 
   nav ul {
+    display: flex;
     position: fixed;
     flex-wrap: wrap;
     background-color:#7F94EB;
     width: 100%;
+    float: :left;
   }
 
   nav ul li {
+    display: flex;
     text-decoration: none;
     padding: 0 20px;
     background-color: #7F94EB;
     color: #3B456E;
-    margin-right: 10px;
     font-size: 2.5vw;
   }
 
   nav ul li a {
     text-decoration: none;
     color: #3B456E;
+    justify-content:space-between;
   }
 
   header h1 {
@@ -68,7 +78,7 @@ header {
 
 .main-layout {
   display: flex;
-  max-width: 75%;
+  max-width: 85%;
   margin-left: auto;
   margin-right: auto;
   align-items: center;
@@ -86,6 +96,7 @@ header {
   border-style: none double;
   border-width: thick;
   border-color:#4D7587;
+  width: 100%;
 }
 
 .page-section h3 {
