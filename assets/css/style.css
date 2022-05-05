@@ -11,44 +11,61 @@ body {
     line-height: 1.5;
   }
 
-header {
-    padding: 0 15px 15px 0;
+/* Header with nav bar -- fixed position */
+
+aside {
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    background-color: #AD66BD;
-    width: 100%;
+    background-color: #8366bd;
+    width: 20%;
+    height: 100%;
   }
+
+/* Headshot  */
+
+aside img {
+  width: 152px;
+  height: 152px;
+  max-width: fit-content;
+  border-radius: 50%;
+  border: 2px solid #4D7587;
+  margin-top: 30%;
+  
+}
 
   nav {
-    display: flex;
     width: 100%;
-    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
   }
 
-  ul {
-    display: flex;
+  /* ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    flex-direction: row;
     list-style-type: none;
     overflow: hidden;
-  }
+  } */
 
-  nav ul {
+  /* nav ul {
     display: flex;
-    position: fixed;
     flex-wrap: wrap;
     background-color:#7F94EB;
     width: 100%;
     justify-content: space-around;
     
-  }
+  } */
 
-  nav ul li {
+/* Nav Bar formatting */
+
+  nav a {
+    flex-wrap: wrap;
     display: flex;
     justify-content: center;
     text-decoration: none;
@@ -56,42 +73,33 @@ header {
     background-color: #7F94EB;
     color: #3B456E;
     font-size: 2.5vw;
+    display: block;
   }
+/* Nav Bar text */
 
-  nav ul li a {
+  /* nav ul li a {
     text-decoration: none;
-    color: #3B456E;
-    justify-content:space-between;
-  }
+    color: #3B456E;  
+    display: block;
+  } */
 
-  header h1 {
-    padding-top: 150px;
+/* BIG Nifer Kilakila */
+
+  h1 {
+    padding-top: 50px;
+    text-align: center;
     margin: 0;
-    font-size: 8vw;
+    font-size: 2rem;
     line-height: 1;
     font-family:'Courier New', Courier, monospace;
   }
 
-  footer {
-    margin-top: 3rem;
-    text-align: center;
-  }
-
-.social-connect li {
-  padding: 20px;
-  color: #3B456E;
-}
-
 /* Main Content */
 
-.main-layout {
-  display: flex;
-  max-width: 85%;
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: row;
+main {
+  max-width: 70%;
+  left: 20%;
+  position: relative;
 }
 
 .page-section {
@@ -124,7 +132,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  /* justify-content: center; */
+  justify-content: center;
 }
 
 /* lifted code -- need to change*/
@@ -141,7 +149,9 @@ header {
   font-size: 0.9rem;
 }
 
-/* Contact Section */
+/* CONTACT SECTION */
+
+/* Contact links formatting */
 
 #contact-me address {
   display: flex;
@@ -149,11 +159,9 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  
 }
 
 #contact-me address a {
-  color: var(--tertiary);
   padding: 10px;
   text-decoration: none;
   font-size: 1.5rem;
@@ -162,7 +170,14 @@ header {
 
 #contact-me address a:hover {
   background-size: 100% 88%;
-  color: var(--secondary);
+}
+
+
+/* Made-in footer */
+
+footer {
+  margin-top: 3rem;
+  text-align: center;
 }
 
 
