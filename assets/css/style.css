@@ -79,7 +79,9 @@ aside img {
   }
 
 
-/* TO DO: FIX IMAGE LINKING */
+/* TO DO: 
+    - fix photo link (???)
+    - Resonsive CSS on photo so that it looks good on any screen */
 
 .hero-banner {
   background-image: url(./assets/images/140616_9086_Port_of_Oakland_Cranes_at_Sunset-Photo-by-Greg-Linhares-City-of-Oakland.jpeg);
@@ -107,7 +109,7 @@ main {
 
 /* Section wrapper */
 .page-section {
-  margin: 45px 0;
+  margin: 120px 0;
   padding: 0 25px;
   display: flex;
   flex-direction: row;
@@ -134,40 +136,59 @@ main {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  justify-content: center;
 }
 
-/* lifted code -- need to change*/
+/* Projet formatting*/
 .flex-item {
-  width: 45%;
   flex-wrap: wrap;
   border: 5px solid #4D7587;
   background-color: #B0BFFF;
   color: #4D7587;
-  padding: 0 0 20px 0;
-
-  /* margin: 0.5em; */
+  padding: 0;
+  margin: 0.5em;
   text-decoration: none;
   font-size: 0.9rem;
+  width: 45%
 }
+
+/* Targets  */
+.flex-item:first-child {
+  min-height: 200px;
+  flex-basis: 100%;
+}
+
 
 /* CONTACT SECTION */
 
-/* Contact links formatting */
+/* TO DO:
+-Contact links need formatting
+-ADD icons */
+
+#contact-me {
+  display: block;
+  text-align: center;
+}
 
 #contact-me address {
-  display: flex;
+  display: flexbox;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   height: 100%;
 }
 
+
+/* Contact Me Link formatting */
+/* TO DO: 
+  - Add Icons*/
+
 #contact-me address a {
+  font-size: 2vw;
   padding: 10px;
   text-decoration: none;
   font-size: 1.5rem;
   display: inline-block;
+  color: #4D7587;
 }
 
 #contact-me address a:hover {
