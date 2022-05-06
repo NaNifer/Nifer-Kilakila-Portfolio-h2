@@ -78,34 +78,29 @@ aside img {
     font-family:'Courier New', Courier, monospace;
   }
 
-
-/* TO DO: 
-    - fix photo link (???)
-    - Resonsive CSS on photo so that it looks good on any screen */
-
-.hero-banner {
-  background-image: url(./assets/images/140616_9086_Port_of_Oakland_Cranes_at_Sunset-Photo-by-Greg-Linhares-City-of-Oakland.jpeg);
-  background: #4D7587;
-  background-size: cover;
-  background-position: center;
-  min-height: 30vh;
-  padding: 2% 6%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-
-
 /* Main Content */
 
 /* Wrapper for main content */
-main {
-  max-width: 70vw;
-  left: 25%;
+.main-layout {
+  max-width: 80vw;
+  left: 20%;
   position: relative;
   display: flexbox;
-  justify-content:center;
+  margin: 0;
 }
+
+/* TO DO: 
+    - fix photo proportions and anchor
+    - Resonsive CSS on photo so that it looks good on any screen */
+.hero-banner {
+  background: url(../images/oaklandPort.jpg);
+  background-position-x: right;
+  min-height: 35vh;
+  padding: 2% 6%;
+  justify-content: flex-end;
+  margin: 0;
+}
+    
 
 /* Section wrapper */
 .page-section {
@@ -161,7 +156,6 @@ main {
 /* CONTACT SECTION */
 
 /* TO DO:
--Contact links need formatting
 -ADD icons */
 
 #contact-me {
