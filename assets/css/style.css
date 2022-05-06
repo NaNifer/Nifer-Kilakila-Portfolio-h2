@@ -11,6 +11,10 @@ body {
     line-height: 1.5;
   }
 
+  /*  optional   
+  background-color: #c0fff2; */
+
+
 /* Header with nav bar -- fixed position */
 
 aside {
@@ -27,26 +31,44 @@ aside {
     height: 100vh;
   }
 
+  .column-container {
+    display:flex;
+    display: block; 
+    align-content: center;
+    padding-bottom: 100px;
+    text-align: center;
+  }
+
 /* Headshot  */
 
 aside img {
   display: block;
-  width: 152px;
-  height: 152px;
-  max-width: fit-content;
+  width: 15vw;
   border-radius: 50%;
   border: 2px solid #4D7587;
   margin-top: 30%;
   flex-basis: auto;
 }
 
-.column-container {
-  display:flex;
-  display: block;
-  align-content: center;
-  padding-bottom: 100px;
+/* Name & title in Aside */
+
+h1 {
   text-align: center;
+  margin: 0;
+  font-size:3vw;
+  font-family:'Courier New', Courier, monospace;
 }
+
+aside h2 {
+  text-align: center;
+  margin: 0;
+  font-size:2vw;
+  font-family:'Courier New', Courier, monospace;
+  line-height: 1;
+  padding-top: 25px;
+}
+
+/* Nav Bar formatting */
 
   nav {
     width: 100%;
@@ -54,8 +76,6 @@ aside img {
     flex-direction: column;
     padding-bottom: 100px;
   }
-
-/* Nav Bar formatting */
 
   nav a {
     justify-content: center;
@@ -67,16 +87,12 @@ aside img {
     display: block;
   }
 
-/* BIG Nifer Kilakila */
+/* Nav Bar Style */
 
-  h1 {
-    padding-top: 50px;
-    text-align: center;
-    margin: 0;
-    font-size: 2rem;
-    line-height: 1;
-    font-family:'Courier New', Courier, monospace;
+  nav a:hover {
+    background-color: rgb(103, 209, 255);
   }
+
 
 /* Main Content */
 
@@ -89,39 +105,32 @@ aside img {
   margin: 0;
 }
 
-/* TO DO: 
-    - fix photo proportions and anchor
-    - Resonsive CSS on photo so that it looks good on any screen */
+/* Hero banner  */
 .hero-banner {
   background: url(../images/oaklandPort.jpg);
-  background-position-x: right;
-  min-height: 35vh;
-  padding: 2% 6%;
-  justify-content: flex-end;
   margin: 0;
+  height: 38vh;
+  background-position: center;
+  flex-basis: fit-content;
 }
-    
 
-/* Section wrapper */
+/* Wrapper for main sections*/
 .page-section {
   margin: 120px 0;
-  padding: 0 25px;
+  padding: 0 10vw;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  border-style: none double;
-  border-width: thick;
-  border-color:#4D7587;
   width: 100%;
 }
 
-.page-section h3 {
+.page-section h2 {
   padding: 5px 5px;
-  font-size: 1.5em;
 }
 
-/* Work Section */
+
+/* WORK Section */
 
 #work div {
   justify-content: space-between;
@@ -133,7 +142,7 @@ aside img {
   width: 100%;
 }
 
-/* Projet formatting*/
+/* Project formatting*/
 .flex-item {
   flex-wrap: wrap;
   border: 5px solid #4D7587;
@@ -142,11 +151,11 @@ aside img {
   padding: 0;
   margin: 0.5em;
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 1.5rem;
   width: 45%
 }
 
-/* Targets  */
+/* Targets first project  */
 .flex-item:first-child {
   min-height: 200px;
   flex-basis: 100%;
@@ -154,9 +163,6 @@ aside img {
 
 
 /* CONTACT SECTION */
-
-/* TO DO:
--ADD icons */
 
 #contact-me {
   display: block;
@@ -171,12 +177,50 @@ aside img {
   height: 100%;
 }
 
+address {
+  background-color: #7F94EB;
+}
+
+/* TO DO: Contact Me ICON BUTTON */
+
+.btn {
+  background-color:#7F94EB;
+  color: #3B456E;
+  border: none;
+  padding: 12px 16px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa {
+  padding: 0;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+
+
+
+
+
 
 /* Contact Me Link formatting */
 /* TO DO: 
   - Add Icons*/
 
-#contact-me address a {
+/* #contact-me address div {
   font-size: 2vw;
   padding: 10px;
   text-decoration: none;
@@ -185,9 +229,16 @@ aside img {
   color: #4D7587;
 }
 
-#contact-me address a:hover {
-  background-size: 100% 88%;
-}
+address div a, i {
+  font-size: 2vw;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #4D7587;
+  display: block;
+} */
+
+
 
 
 /* Made-in footer */
@@ -198,6 +249,8 @@ footer {
   text-align: center;
   padding-top: 30px;
 }
+
+
 
 
 /* MEDIA QUERY -- only breakpoints, NEED TO ADD CSS!! */
@@ -218,7 +271,16 @@ footer {
 
 /* Small smartphones */
 @media screen and (max-width: 576px) {
-  .sample-img {
-    
+  .hero-banner {
+    /* height: 150px;
+    width: 300px;
+    object-fit: scale-down; */
   }
 }
+
+
+
+
+
+
+/*  README: Referred to W3 Schools for button and icon formatting */
