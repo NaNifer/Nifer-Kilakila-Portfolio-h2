@@ -172,8 +172,10 @@ aside h2 {
 
 /* portfolio project images */
 .project-1:hover {
-  background: url("../images/geometricPatterns/Geo-blue-lined-circle.png");
-  background-size: 100%;
+  background: url("../images/nanarwhal-800px.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .project-2:hover {
