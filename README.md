@@ -56,7 +56,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 ### Links
 
-- Live Site URL: [Nifer Kilakila Portfolio on GitHub](https://nanifer.github.io/Nifer-Kilakila-Portfolio-homework2/)
+- Live Site URL: [Nifer Kilakila Portfolio on GitHub](https://nanifer.github.io/Nifer-Kilakila-Portfolio-h2/)
 
 ### Built with
 - Semantic HTML5 markup
