@@ -172,15 +172,22 @@ aside h2 {
 
 /* portfolio project images */
 .project-1:hover {
-  background: url("../images/nanarwhal-800px.jpg");
-  background-size: cover;
+  background: url("../images/battle-cover-image.png");
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
+/* .project-1 h4:hover {
+  display: none;
+} */
+
 .project-2:hover {
-  background-image: url("../images/geometricPatterns/Geo-blue-red-dot.png");
-  background-size: 100%;
+  background-image: url("../images/nanarwhal-800px.jpg");
+  background-size: 120%;
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .project-3:hover {
